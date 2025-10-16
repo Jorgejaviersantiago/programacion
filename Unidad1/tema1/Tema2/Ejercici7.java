@@ -8,11 +8,16 @@ public class Ejercici7 {
 
     public static void main(String[] args) {
     
-        float numb1;
-        float numb2;
+        float base;
+        double iva;
         Scanner escaner = new Scanner (System.in) ;
-        System.out.println("Introduzca la base imponible(precio sin iba):");
-
+        System.out.printf("Introduzca la base imponible(precio sin iva):");
+        base = escaner.nextFloat();
+        iva = base * 0.21;
+        System.out.println("Base imponible:"+base+"\n");
+        System.out.println("iva (21%)" + base * 0.21 );
+        System.out.printf("-------------------\n");
+        System.out.printf("total:\t %.2f", base * iva);
 
 
 }
