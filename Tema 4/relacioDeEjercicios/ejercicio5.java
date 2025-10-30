@@ -1,3 +1,5 @@
+package relacioDeEjercicios;
+
 import java.util.Scanner;
 
 public class ejercicio5 {

@@ -1,3 +1,5 @@
+package relacioDeEjercicios;
+
 public class ejercicio4 {
  
     
