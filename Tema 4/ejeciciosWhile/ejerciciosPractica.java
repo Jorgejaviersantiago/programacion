@@ -17,11 +17,12 @@ public class ejerciciosPractica {
          num=escaner.nextInt();
         
          while(num>=0){
+            total= total + num; // total += totalNum
+            
             System.out.print("?");
             num=escaner.nextInt();
-            
             totalNum++;
-            total= total + num; // total += totalNum
+        
             
           }
        
