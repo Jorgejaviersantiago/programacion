@@ -1,4 +1,4 @@
-package relacioDeEjercicios;
+
 
 import java.util.Scanner;
 
