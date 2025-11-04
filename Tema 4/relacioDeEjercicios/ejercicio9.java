@@ -13,9 +13,12 @@ public static void main(String[] args) {
             System.out.print("Ahora introduzca el día : ");
             dia=Integer.parseInt(System.console().readLine());
 
-        if(dia>=22 && dia<=31 || dia>=1 && dia<=19){
+        if(dia>=22 || dia<=31 ){
             System.out.println("Capricornio");
-        }
+        }else if(dia<=19) {
+            System.out.println("Capricornio");
+
+        }else
     }if(mes==1){
         System.out.print("Ahora introduzca el día : ");
         dia=Integer.parseInt(System.console().readLine());
