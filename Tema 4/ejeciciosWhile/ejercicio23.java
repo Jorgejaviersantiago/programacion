@@ -11,7 +11,8 @@ public class ejercicio23 {
      
         System.out.println("Introduzca un numero entero");
         digito=Integer.parseInt(System.console().readLine());
-    
+        
+        System.out.printf("Contando de izquierda a derecha , el %d aparece dentro del %d en las siguientes posiciones:%d",numero,digito,posicion);
         // giramos el numero
         while (numero > 0) {
             volteado = (volteado*10) + (numero%10);
@@ -26,13 +27,15 @@ public class ejercicio23 {
         volteado /= 10;
         posicion++;
      }
-    }catch(){
 
-    }
-        System.out.printf("Contando de izquierda a derecha , el %d aparece dentro del %d en las siguientes posiciones:",digito,numero);
 
         
 
+    }catch(Exception esception){
+        System.out.print("¡Se ha producio un error!");
+        
     
+    
+    }
  }
 }
