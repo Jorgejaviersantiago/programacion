@@ -5,22 +5,31 @@ public class ejercicio23 {
        int digito ;
        int volteado = 0;
        int posicion = 1;
-        try{
-        System.out.println("Introduzca un numero entero");
+       int longitud=0; 
+      //string.valueOf
+      
+      
+       try{
+        System.out.println("Introduzca un numero entero: ");
         numero=Integer.parseInt(System.console().readLine());
      
-        System.out.println("Introduzca un numero entero");
+        System.out.println("Introduzca un digito: ");
         digito=Integer.parseInt(System.console().readLine());
         
-        System.out.printf("Contando de izquierda a derecha , el %d aparece dentro del %d en las siguientes posiciones:%d",numero,digito,posicion);
+        System.out.printf("Contando de izquierda a derecha , el %d aparece dentro del %d en las siguientes posiciones: %d",digito,numero,posicion);
         // giramos el numero
         while (numero > 0) {
             volteado = (volteado*10) + (numero%10);
             numero/=10 ;
+            longitud++;
         }
+        // calculamos la longitud del número
+        // longitud
+        
+        
         //calculamos posición
-       while(volteado > 0){
-        if(volteado == digito){
+       for(;longitud > 0 ;longitud--){
+        if(volteado%10 == digito){
             System.out.printf("%d", posicion);
 
         }
