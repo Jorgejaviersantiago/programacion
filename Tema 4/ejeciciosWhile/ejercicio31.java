@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ejericico31 {
+public class ejercicio31 {
     
 
     public static void main(String[] args) {
@@ -62,41 +62,37 @@ public class ejericico31 {
                 numerosImpares = (numerosImpares*10)+digito;
             }
         }
-        while (primero > 0){
-            digito=(int)(primero%10);
-            primero/=10;
-            
-            if(digito%2==0){
-                numerosPares = (numerosPares*10)+digito;
-            }else{
-                numerosImpares = (numerosImpares*10)+digito;
-            }
-
+     
           
-        }
-        while (segundo > 0){
-            digito=(int)(segundo%10);
-            segundo/=10;
-            
-            if(digito%2==0){
-                numerosPares = (numerosPares*10)+digito;
-            }else{
-                numerosImpares = (numerosImpares*10)+digito;
-            }
-
-          
-        }
+        
             System.out.printf("El numero formado por los digitos pares es: %d \n",numerosPares);
             System.out.printf("El numero formado por los digitos impares es: %d",numerosImpares);
 
-        }catch(InputMismatchException ime){
+         }catch(InputMismatchException ime){
             System.out.println("ERROR se ha pedidio un valor de tipo entero.");
         }catch(Exception exception){
             System.out.println("ERROR la aplicación ha fallado.");
         }finally{
             escaner.close();
         }
-
     }
+   
 
+  
+
+/**
+ * 
+ * @param numero
+ * @return
+ */
+    public static boolean esPar(int numero) {
+        
+        boolean par = false ;
+        
+        if(numero%2==0){
+            par=true;
+        }
+        return par ;
+
+  }
 }
