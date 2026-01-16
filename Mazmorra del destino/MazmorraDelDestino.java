@@ -46,7 +46,7 @@ public class MazmorraDelDestino {
 
             switch (elegir) {
                         case 1:
-                        evento=(int)(Math.random()*(3+1));
+                        evento=(int)(Math.random()*(4-1));
     
 
                         switch (evento) {
@@ -67,7 +67,7 @@ public class MazmorraDelDestino {
                                         System.out.printf("El enemigo te ataca y causa %d de daño\n",dañoFinalEnemigo);
                                         dañoFinalEnemigo=dañoEnemigo+(int)Math.random()*(4+1);
                                         vida-=dañoFinalEnemigo;
-                                        dañoJugador-=vidaEnemigo;
+                                        vidaEnemigo-=dañoJugador;
                                        System.out.printf(" vida del jugador %d \n",vida);
                                        System.out.printf("la  vida del enmigo es de  es de %d\n",vidaEnemigo);
                                         break;
@@ -99,9 +99,7 @@ public class MazmorraDelDestino {
                                 
                                 case 1:
                                 oroEnemigo=(int)Math.random()*(15-5+1)+5;
-                                oro= oro+oroEnemigo;
-                                    break;
-                                default:
+                                oro=oro+oroEnemigo;
                                     break;
                                 }
                             }
@@ -109,9 +107,9 @@ public class MazmorraDelDestino {
                             break;
                         case 1:
                             pociones+=1;
-                                    
+                            System.out.println("Has encontrado una poción");      
                                 
-                                break;
+                            break;
                         case 2:
                             oroEncontrado=(int)Math.random()*(15-5+1)+5;
                             System.out.printf("Has encontrado %d oro",oroEncontrado);
