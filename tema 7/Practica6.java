@@ -55,7 +55,7 @@ public class Practica6 {
      * @param array
      */
    public static void rotar(int[]rotado) {
-    int temp= rotado[MAXIMO-1];
+    int temp = rotado[MAXIMO-1];
     
     for (int i = MAXIMO-2 ;i >=0 ; i--){
         rotado[i+1]=rotado[1];

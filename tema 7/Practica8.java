@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Practica8 {
     
-
+    public static final int MAXIMO=12;
 
     public static void main(String[] args) {
-        int temp;
+      
         
         String[]meses = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
         int[]temperatura=new int[12];
@@ -17,10 +17,23 @@ public class Practica8 {
         
         
         
-        
-        
-        
                 }
+                System.out.println();
+
+        for(int i=0;i<MAXIMO;i++){
+            System.out.printf("%10s |",meses[i]);
+            
+                for(int f = 1 ; f < temperatura[i];f++){
+                    System.out.printf("*");
+                }
+        
+            System.out.printf("%d",temperatura[i]);        
+            System.out.println();
+        }
+
+
+
+
     }
  }
 
