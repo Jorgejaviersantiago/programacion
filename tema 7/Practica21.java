@@ -55,10 +55,7 @@ public class Practica21 {
          }
      }
  
-
-
-
-     
+     //FUncion modificada 
      public static void mostrarMod(int[]array) {
         
         System.out.println();
