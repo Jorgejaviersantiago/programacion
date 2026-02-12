@@ -1,23 +1,14 @@
 package ej05.Clase;
 
 public class Bicicleta extends Vehiculo {
- 
     
-    
-
-    
-        private String caballito;
-        
-        public Bicicleta(int kilometrosTotales, int kilometroRecorridos) {
-            super(kilometrosTotales, kilometroRecorridos);
-            //TODO Auto-generated constructor stub
-        }
-
-
-
+    public void andar(int km){
+        System.out.println("¿Cuantos kilometros quieres recorrer?: ");
+        recorrer(km);
+    }
 
     public void hacerElCaballito(){
-        System.out.println("Estoy haciendo el caballito");
+        System.out.println("Estoy haciendo el caballito con la bici");
     }
 
 
