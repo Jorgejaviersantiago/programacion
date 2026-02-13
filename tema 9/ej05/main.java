@@ -45,7 +45,7 @@ import ej05.Clase.Coche;
                         break;
 
                 case 5:
-                    System.out.println("Kilómetros bicicleta: " + bici.getKilometroTotales() );
+                    System.out.println("Kilómetros bicicleta: " + bici.getKilometroRecorridos() );
 
                         break;
                 case 6:

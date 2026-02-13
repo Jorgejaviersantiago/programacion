@@ -1,4 +1,4 @@
-package Tema9.Ejercicios.Ejercicio5.clases;
+package ej05Alfredo;
 
 public class Vehiculo {
     private int vehiculosCreados =0 ;

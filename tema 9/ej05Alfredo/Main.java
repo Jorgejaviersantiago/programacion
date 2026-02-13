@@ -1,4 +1,4 @@
-package Tema9.Ejercicios.Ejercicio5;
+package ej05Alfredo;
 
 import java.util.Scanner;
 
